@@ -1,0 +1,112 @@
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.game-container {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+}
+.container {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    width: 35.5%;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 0fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+    cursor: pointer;
+    background-image: url('./ASSETS\ GAME\ PHLWIN/BACK CARD-100.jpg');
+    background-size: 80px 80px;
+  }
+  .cell.flipped {
+    background-image: none;
+  }
+  .cell.coin {
+    background-image: url('./ASSETS\ GAME\ PHLWIN/COINS-100.jpg');
+    background-size: 80px 80px;
+  }
+  .cell.bomb {
+    background-image: url('./ASSETS\ GAME\ PHLWIN/BOMB_2-100.jpg');
+    background-size: 80px 80px;
+  }
+
+  #btnCashout {
+    background-color: rgb(218, 7, 56);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#start-game{ 
+    background-color: rgb(218, 7, 56);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+#btnReset {
+    all: unset;
+    cursor: pointer;
+}
+.btnCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.inputBetHere {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.inputBetHere label {
+    font-size: 14px;
+}
+.inputBetHere input {
+    height: 50px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.inputBetHere input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance:  none;
+    margin: 0;
+}
+
+@media (max-width: 375px) {
+    
+}
